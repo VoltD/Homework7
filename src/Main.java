@@ -13,5 +13,19 @@ public class Main {
             month++;
         }
         System.out.println();
+
+        // Task 2
+        System.out.println("Task 2");
+        int i = 1;
+        while (i <= 10) {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+        for (i = 10; i >= 1; i--) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        System.out.println();
     }
 }
