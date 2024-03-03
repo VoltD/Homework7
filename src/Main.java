@@ -27,5 +27,62 @@ public class Main {
         }
         System.out.println();
         System.out.println();
+
+        // Task 3
+        System.out.println("Task 3");
+        int population = 12_000_000;
+        int growPerThousand = 17;
+        int mortalityPerThousand = 8;
+        for (i = 1; i <= 10; i++) {
+            population += population / 1000 * growPerThousand - population / 1000 * mortalityPerThousand;
+            System.out.println("Год " + i + ", численность населения составляет " + population);
+        }
+        System.out.println();
+
+        // Task 4
+        System.out.println("Task 4");
+        int interest = 7;
+        int deposit = 15000;
+        goal = 12_000_000;
+        i = 1;
+        while (deposit <= goal) {
+            deposit += deposit / 100 * interest;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+            i++;
+        }
+        System.out.println();
+
+        // Task 5
+        System.out.println("Task 5");
+        //int interest = 7; // Не изменился с предыдущей задачи
+        //goal = 12_000_000;
+        deposit = 15000;
+        i = 1;
+        while (deposit <= goal) {
+            deposit += deposit / 100 * interest;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+            } else if (deposit > goal) {
+                // Результат может быть достигнут за количество месяцев не кратное 6, но должен быть выведен
+                System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+            }
+            i++;
+        }
+        System.out.println();
+
+        // Task 6
+        System.out.println("Task 6");
+        //int interest = 7; // Не изменился с предыдущей задачи
+        deposit = 15000;
+        int years = 9;
+        i = 1;
+        while (i <= years * 12) {
+            deposit += deposit / 100 * interest;
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + ", сумма накоплений равна " + deposit + " рублей");
+            }
+            i++;
+        }
+        System.out.println();
     }
 }
