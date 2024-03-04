@@ -84,5 +84,28 @@ public class Main {
             i++;
         }
         System.out.println();
+
+        // Task 7
+        System.out.println("Task 7");
+        int friday = 1;
+        int daysOfMonth = 31;
+        while (friday <= daysOfMonth) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday += 7;
+        }
+        System.out.println();
+
+        // Task 8
+        System.out.println("Task 8");
+        int year = 0;
+        int period = 79;
+        int start = 2024 - 200;
+        int end = 2024 + 100;
+        while (year <= end) {
+            if (year >= start) {
+                System.out.println(year);
+            }
+            year += period;
+        }
     }
 }
